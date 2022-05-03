@@ -27,6 +27,8 @@ Resources:
             - Effect: Allow 
               Action:
                 - dynamodb:PutItem
+                - dynamodb:GetItem
+                - dynamodb:Scan
               Resource: !GetAtt DDBTable.Arn
       Environment:
         Variables:
